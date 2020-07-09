@@ -9,5 +9,6 @@ This repository contains the source code of a simple Java app. It is used to dem
 ## Contact me via:
 1. [GitHub](https://github.com/doit-now)
 2. [Facebook](https://facebook.com/giao.lang.bis)
+3. [Email](hoang.nguyenthe@gmail.com)
 
 #### © 2020 by giáo.làng  
