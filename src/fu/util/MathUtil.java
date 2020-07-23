@@ -9,16 +9,18 @@ package fu.util;
  *
  * @author giao-lang
  */
-//đây là class chứa các hàm tiện ích xài chung cho các nơi khác
-//nó chứa các hàm tính toán bổ trợ cho các class khác
-//do là đồ bổ trợ, xài chung, nên chúng là STATIC
+//?�y l� class ch?a c�c h�m ti?n �ch x�i chung cho c�c n?i kh�c
+//n� ch?a c�c h�m t�nh to�n b? tr? cho c�c class kh�c
+//do l� ?? b? tr?, x�i chung, n�n ch�ng l� STATIC
 public class MathUtil {
     
-    //hàm tính n! = 1.2.3...n, vì tăng kết quả rất nhanh, sớm tràn
-    //int chỉ tối đa 2 tỷ 1, phải để long cho đỡ bị tràn kết quả
-    //mình chỉ nên tính n <= 15, vì 20! to lắm
+    //h�m t�nh n! = 1.2.3...n, v� t?ng k?t qu? r?t nhanh, s?m tr�n
+    //int ch? t?i ?a 2 t? 1, ph?i ?? long cho ?? b? tr�n k?t qu?
+    //m�nh ch? n�n t�nh n <= 15, v� 20! to l?m
     public static long computeFactorial(int n) {
         
+        if(n < 0 || n > 15)
+            throw new IllegalArgumentException("Invalid argument. n mus be >= 0 and <= 15");
         long result = 1;
         for (int i = 1; i <= n; i++) {
             result *= i;
